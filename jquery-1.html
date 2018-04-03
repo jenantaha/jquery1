@@ -23,6 +23,7 @@
       $("h1").text("New Headline");
 
       $("h2").text("A Wikipedia article");
+    }
 
       function logHeadlines() {
         var h1=$("h1").text();
@@ -32,7 +33,14 @@
         console.log(h2);
 
       }
-    }
+
+      function swapHeadlines() {
+        var head1 = $("h2").text();
+        var head2 = $("h1").text();
+        $("h1").text(head1);
+        $("h2").text(head2);
+
+      }
     </script>
 
 </body>

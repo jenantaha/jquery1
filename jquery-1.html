@@ -2,6 +2,11 @@
 <html>
 <head>
   <title>jQuery test page</title>
+  <style>
+  .highlight {
+    background-color: yellow;
+  }
+  </style>
 </head>
 <body>
   <h1>Lorem ipsum</h1>
@@ -41,6 +46,24 @@
         $("h2").text(head2);
 
       }
+
+      function noSubhed() {
+        var sub2=$("h2").fadeOut();
+        var sub3=$("h3").fadeOut();
+      }
+      function undo(){
+        var undosub2=$("h2").show();
+        var undosub3=$("h3").show();
+      }
+
+      function highlightByline(){
+        $(".byline").addClass("highlight"); //don't put . in addclass part//
+
+      }
+      function  unHighlightByline() {
+          $(".byline").removeClass("highlight");
+      }
+
     </script>
 
 </body>
